@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="server/kayit.js" method="POST">
+      <input type="hidden" name="id" value="123678345" />
+      <p>
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          placeholder="password 123456"
+          required
+          minlength="6"
+        />
+      </p>
+
+      <p>
+        <label for="ad">Vorname</label>
+        <input
+          id="ad"
+          name="ad"
+          type="text"
+          required
+          minlength="3"
+          placeholder="vorname"
+        />
+      </p>
+      <p>
+        <label for="soyad">Nachname </label>
+        <input
+          id="soyad"
+          name="soyad"
+          type="text"
+          required
+          minlength="2"
+          placeholder="nachname"
+        />
+      </p>
+      <p>
+        <label for="stadt">Stadt :</label>
+        <input type="text" id="stadt" name="stadt" placeholder="Stadt" />
+      </p>
+      <p>
+        <label for="Familienstand">Familienstand :</label><br />
+
+        <input
+          type="radio"
+          name="Familiestand"
+          id="Verheiratet"
+          value="Verheiratet"
+        />
+        <label for="Verheiratet">Verheiratet</label><br />
+
+        <input type="radio" name="Familiestand" id="Ledig" value="Ledig" />
+        <label for="Ledig">Ledig</label><br />
+      </p>
+      <p>
+        <label>E-posta :</label>
+        <input type="email" placeholder="arikan@technologie.com" />
+      </p>
+      <p>
+        <label>Telefon :</label>
+        <input type="tel" placeholder="0123456789" />
+      </p>
+      <p>
+        <label for="Hobby">Hobby :</label><br />
+
+        <input type="checkbox" name="Fussball" id="Fussball" value="Fussball" />
+        <label for="Fussball">Fussball</label><br />
+
+        <input
+          type="checkbox"
+          name="Basketball"
+          id="Basketball"
+          value="Basketball"
+        />
+        <label for="Basketball">Basketball</label><br />
+
+        <input
+          type="checkbox"
+          name="Tischtennis"
+          id="Tischtennis"
+          value="Tischtennis"
+        />
+        <label for="Tischtennis">Tischtennis</label><br />
+        <input type="text" name="other" id="other" />
+        <label for="other">andere Hobby</label><br />
+      </p>
+      <p>
+        <label for="Profil Fotograf">Profil Fotograf :</label>
+        <input type="file" id="Profil Fotograf" name="Profil Fotograf" />
+      </p>
+      <p>
+        <label for="dogum">Geburtsdatum :</label>
+        <input type="date" name="dogum" id="dogum" />
+      </p>
+      <p>
+        <label for="adres">Adresse :</label><br />
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="submit" />
+        <input type="button" value="button" />
+        <input type="reset" value="reset" />
+      </p>
+    </form>
+  </body>
+</html>
